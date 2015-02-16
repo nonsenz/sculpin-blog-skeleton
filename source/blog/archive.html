@@ -1,9 +1,14 @@
 ---
 layout: default
-title: Posts Archive
+title: Archive
 generator: pagination
 use:
     - posts
+main_img:
+    path: home.jpg
+    copyright:
+        name: Mark Danielson
+        url: https://www.flickr.com/photos/mrbula/
 
 ---
 {% set year = '0' %}
@@ -20,7 +25,7 @@ use:
   <h3>{{ month }} {{ year }}</h3>
 {% endif %}
   <div>
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      {{ post.date | date('.d') }} - <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
   </div>
 {% endfor %}
 
