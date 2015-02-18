@@ -10,6 +10,30 @@ permalink: sitemap.xml
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+    <url>
+        <loc>{{ site.url }}/about</loc>
+        <lastmod>{{ site.calculated_date | date('Y-m-d') }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>{{ site.url }}/tags</loc>
+        <lastmod>{{ site.calculated_date | date('Y-m-d') }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>{{ site.url }}/categories</loc>
+        <lastmod>{{ site.calculated_date | date('Y-m-d') }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>{{ site.url }}/archive</loc>
+        <lastmod>{{ site.calculated_date | date('Y-m-d') }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
   {% for post in data.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
