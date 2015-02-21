@@ -16,7 +16,7 @@ main_img:
 ---
 
 especially in the post snowden era this sould be clear: if you host your own services like web-, database-, chat- or mailserver you
-should take your time to secure all those components. but how so you do this the right way? especially if you (as one example)
+should take your time to secure all those components. but how do you do this the right way? especially if you (as one example)
 set up ejabberd for the first time and and simply don't know any best practices when running a jabber server.
 it would be really handy to have a tin foil hat friend sitting behind you who could tell you what to do.
 
